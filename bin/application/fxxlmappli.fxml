@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="recette1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlleur">
+   <children>
+      <TextArea fx:id="barrerecherche" layoutX="301.0" layoutY="73.0" prefHeight="58.0" prefWidth="538.0" />
+      <Button fx:id="btnrechercher" layoutX="856.0" layoutY="87.0" mnemonicParsing="false" onAction="#Rechercher" onMouseClicked="#Rechercher" text="Rechercher" />
+      <MenuButton layoutX="1045.0" layoutY="57.0" mnemonicParsing="false" text="Menu" textFill="#0d0d0d">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Liste de course" />
+          <MenuItem mnemonicParsing="false" text="ajouter une recette" />
+        </items>
+      </MenuButton>
+      <HBox layoutX="127.0" layoutY="235.0" prefHeight="288.0" prefWidth="920.0">
+         <children>
+            <ImageView fx:id="recetteclilc1" fitHeight="267.0" fitWidth="320.0" onMouseClicked="#Chargerrecette" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="recetteclic2" fitHeight="276.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="271.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true" />
+         </children></HBox>
+      <Text layoutX="273.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="586.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="907.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>
