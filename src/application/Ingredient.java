@@ -1,6 +1,6 @@
 package application;
 public class Ingredient {
-	private String nomin;
+	public String nomin;
 	private float qte;
 	private String unite;
 	public Ingredient(String nomin, float qte, String unite) {

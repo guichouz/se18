@@ -5,10 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
  
 public class DataBaseRecette {
 	String pathtxt;
 	 public HashMap<String, Recette> recettemap = new HashMap<String, Recette>();
+	
 	
 
 	public DataBaseRecette(String pathtxt) throws IOException {
@@ -51,5 +53,46 @@ public class DataBaseRecette {
 		
 	}
 	
+	public ArrayList<String> createTabIngre() {
+		ArrayList<String> ltotingre = new ArrayList<>();
+		
+		 for (Map.Entry mapentry : this.recettemap.entrySet()) {
+			Recette r =  (Recette) mapentry.getValue();
+			ArrayList<Ingredient> lingre =r.ingredients;
+			for(Ingredient ingre : lingre) {
+				if(!ltotingre.contains(ingre.nomin)) {
+					ltotingre.add(ingre.nomin);
+					
+					
+				}
+					
+						
+					
+				
+			}
+			 
+		 }
+		return ltotingre;
+		
+	}
+	public ArrayList<String> createTabIntit() {
+		ArrayList<String> ltotint = new ArrayList<>();
+		
+		 for (Map.Entry mapentry : this.recettemap.entrySet()) {
+			Recette r =  (Recette) mapentry.getValue();
+			String intitu = r.intutile;
+			
+			if(!ltotint.contains(intitu)) {
+				ltotint.add(intitu);
+					
+						
+					
+				
+			}
+			 
+		 }
+		return ltotint;
+		
+	}
 
 }

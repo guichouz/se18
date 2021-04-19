@@ -1,4 +1,5 @@
 package application;
+import java.awt.Label;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
@@ -22,9 +23,12 @@ public class Recette {
 	public String  toString() {
 		return this.intutile+" " + this.ingredients+" " + this.etapeprep;
 	}
+	
 	public static void main(String[] args) throws IOException {
 		DataBaseRecette  dessert = new DataBaseRecette("BaseDonnéeDessert.txt");
 		 for (Map.Entry mapentry : dessert.recettemap.entrySet()) {
+			 Label lbl = new Label(mapentry.getKey() + " |  ");
+			 
 	           System.out.println(mapentry.getKey() 
 	                              + " |  " + mapentry.getValue());
 	        }
