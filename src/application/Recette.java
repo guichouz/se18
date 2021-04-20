@@ -25,7 +25,7 @@ public class Recette {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		DataBaseRecette  dessert = new DataBaseRecette("BaseDonnéeDessert.txt");
+		DataBaseRecette  dessert = new DataBaseRecette("BaseDonnÃ©eDessert.txt");
 		System.out.println(dessert.recettemap.size());
 		 for (Map.Entry mapentry : dessert.recettemap.entrySet()) {
 			 Label lbl = new Label(mapentry.getKey() + " |  ");

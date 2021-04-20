@@ -8,17 +8,18 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="798.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlleur">
    <children>
-      <ImageView fx:id="imagelogo" fitHeight="150.0" fitWidth="200.0" layoutX="47.0" layoutY="28.0" onMouseClicked="#Retourmenu" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imagelogo" fitHeight="108.0" fitWidth="125.0" layoutX="14.0" layoutY="11.0" onMouseClicked="#Retourmenu" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Pictures/cuicune.png" />
+            <Image url="@../image/cuicune.png" />
          </image>
       </ImageView>
-      <Text layoutX="414.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nom de la recette" />
-      <SplitPane dividerPositions="0.5" layoutX="147.0" layoutY="199.0" prefHeight="200.0" prefWidth="200.0">
-         <items>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-         </items>
-      </SplitPane>
+      <TextArea fx:id="nomrecette" layoutX="227.0" layoutY="34.0" prefHeight="70.0" prefWidth="336.0" />
+      <VBox fx:id="imagerecettep" layoutX="89.0" layoutY="141.0" prefHeight="205.0" prefWidth="214.0" />
+      <Text layoutX="317.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrédients:" />
+      <VBox fx:id="ingredients" layoutX="317.0" layoutY="171.0" prefHeight="200.0" prefWidth="432.0" />
+      <Text layoutX="89.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Préparation:" />
+      <VBox fx:id="preparation" layoutX="93.0" layoutY="417.0" prefHeight="295.0" prefWidth="759.0" />
+      <VBox fx:id="tempspreparation" layoutX="627.0" layoutY="28.0" prefHeight="83.0" prefWidth="100.0" />
+      <VBox fx:id="note" layoutX="749.0" layoutY="34.0" prefHeight="83.0" prefWidth="100.0" />
    </children>
 </AnchorPane>

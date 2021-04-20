@@ -2,8 +2,6 @@ package application;
 
 
 
-
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -32,15 +30,30 @@ public class Controlleur {
 	@FXML 
 	private ImageView imagelogo;
 	
+	@FXML 
+	private TextArea nomrecette;
+	
+	@FXML 
+	public VBox imagerecettep;
 
+	@FXML 
+	public VBox ingredients;
+	
+	@FXML 
+	public VBox preparation;
+	
+	@FXML 
+	public VBox tempspreparation;
+	
+	@FXML 
+	public VBox note;
+	
 	@FXML
 	public VBox id1;
 	
+	public ModÃ¨le m;
 	
-	
-	public Modèle m;
-	
-	public Controlleur(Modèle m) {
+	public Controlleur(ModÃ¨le m) {
 	
 		this.m = m;
 	}

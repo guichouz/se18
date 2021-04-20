@@ -6,7 +6,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
@@ -51,7 +53,8 @@ public class Vue implements Observer{
 	@Override
 	public void update(Observable o, Object arg) {
 		Collection<Recette> recettecol =  (Collection<Recette>) arg;
-		ArrayList<Recette> listRecette = new ArrayList<>(recettecol);
+		ArrayList<Recette> listRecette = new ArrayList<Recette>(recettecol);
+		//Collections.sort((List<Recette>) listRecette);
 		//VBox boxrecette = (VBox) root.lookup("#receAcceuil");
 		
 		for(int i=0; i<listRecette.size()/3+listRecette.size()%3;i++) {

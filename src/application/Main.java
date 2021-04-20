@@ -13,13 +13,13 @@ import javafx.scene.layout.BorderPane;
 
 public class Main extends Application {
 	public Controlleur c1;
-	public Modèle m;
+	public ModÃ¨le m;
 	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
 		
-			m = new Modèle();
+			m = new ModÃ¨le();
 			c1= new Controlleur(m);
 			
 			
