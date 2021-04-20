@@ -27,7 +27,7 @@ public class TestSearchBar  extends Application{
                             "How do I delete my Facebook Account",
                             "How can I change my password",
                             "How do I write some code in my question :D"}; 
-        ArrayList<String> arlist = dessert.createTabIntit();
+        ArrayList<String> arlist = dessert.createTabIngre();
 
         // note that you don't need to stick to these types of containers, it's just an example
         StackPane root = new StackPane();
@@ -43,7 +43,7 @@ public class TestSearchBar  extends Application{
             if(container.getChildren().size()>1){ // if already contains a drop-down menu -> remove it 
                 container.getChildren().remove(1);
             }
-            container.add(populateDropDownMenu(newValue, arlist),0,1); // then add the populated drop-down menu to the second row in the grid pane
+            container.add(populateDropDownMenu(newValue, options),0,1); // then add the populated drop-down menu to the second row in the grid pane
         });
 
         // those buttons just for example
@@ -73,7 +73,7 @@ public class TestSearchBar  extends Application{
 
     // this method searches for a given text in an array of Strings (i.e. the options)
     // then returns a VBox containing all matches
-    public static VBox populateDropDownMenu(String text, ArrayList<String> options){
+    public static VBox populateDropDownMenu(String text, String[] options){
         VBox dropDownMenu = new VBox();
         dropDownMenu.setBackground(new Background(new BackgroundFill(Color.GREY, null,null))); // colors just for example
         dropDownMenu.setAlignment(Pos.CENTER); // all these are optional and up to you

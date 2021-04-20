@@ -2,26 +2,26 @@ package application;
 
 
 
+
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Controlleur {
 	
 	
-	@FXML 
-	private ImageView recetteclilc1;
-	
-	@FXML 
-	private ImageView recetteclilc2;
-	
-	@FXML 
-	private ImageView recetteclilc3;
+	@FXML
+	private AnchorPane recette1;
 	
 	@FXML
 	private TextArea barrerecherche;
@@ -32,9 +32,22 @@ public class Controlleur {
 	@FXML 
 	private ImageView imagelogo;
 	
-	public void Chargerrecette() throws ClassNotFoundException {
+
+	@FXML
+	public VBox id1;
+	
+	
+	
+	public Modèle m;
+	
+	public Controlleur(Modèle m) {
+	
+		this.m = m;
+	}
+	
+	public void Chargerrecette(ImageView img) throws ClassNotFoundException {
 		System.out.println("1");
-		Stage mainStage = (Stage) recetteclilc1.getScene().getWindow();
+		Stage mainStage = (Stage) img.getScene().getWindow();
 
 		    try {
 		            Parent root = FXMLLoader.load(getClass().getResource("pagerecette.fxml"));
@@ -42,13 +55,17 @@ public class Controlleur {
 		            mainStage.setScene(scene);
 		            mainStage.setTitle("Test Window");
 		        }
-		            catch(Exception e){}
+		            catch(Exception e){
+		            	System.out.println("error");
+		            }
 	    
 
 }
+	@FXML
 	public void Rechercher() {
 		String chaine = barrerecherche.getText();
 		System.out.println(chaine);
+		
 		
 	}
 	public void Retourmenu() throws ClassNotFoundException {
