@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Observable;
 
-public class Mod√®le extends Observable {
+public class ModËle extends Observable {
 	public DataBaseRecette db;
 	public DataBaseRecette db1;
 
 
 
-	public Mod√®le() throws IOException {
+	public ModËle() throws IOException {
 		super();
 
 		db = new DataBaseRecette("BaseDonn√©eDessert.txt");
