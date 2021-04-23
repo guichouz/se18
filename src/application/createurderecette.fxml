@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="nomderecette2" layoutX="14.0" layoutY="155.0" prefHeight="39.0" prefWidth="290.0" />
+      <Text fx:id="nomderecette1" layoutX="22.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de la recette" />
+      <Text fx:id="ingredients1" layoutX="22.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrédients" />
+      <TextArea fx:id="ingredients2" layoutX="14.0" layoutY="229.0" prefHeight="120.0" prefWidth="740.0" />
+      <Text fx:id="preparation1" layoutX="21.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Préparation" />
+      <TextArea fx:id="preparation2" layoutX="14.0" layoutY="391.0" prefHeight="200.0" prefWidth="740.0" />
+      <Button fx:id="enregistrer" layoutX="258.0" layoutY="614.0" mnemonicParsing="false" text="Enregistrer" />
+      <Button fx:id="favori" layoutX="419.0" layoutY="614.0" mnemonicParsing="false" text="Favori" />
+      <Text layoutX="378.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Créateur de recette" />
+      <ImageView fx:id="imagelogo1" fitHeight="107.0" fitWidth="140.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
