@@ -59,6 +59,9 @@ public class Controlleur {
 	@FXML
 	public Text textacc1,textacc2;
 	
+	@FXML
+	private Text nomrecette1;
+	
 	
 	public SearchBar barreRecherche;
 	

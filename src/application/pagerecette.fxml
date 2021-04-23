@@ -6,14 +6,13 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="798.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="798.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fx:id="imagelogo" fitHeight="115.0" fitWidth="134.0" layoutX="14.0" layoutY="11.0"  pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imagelogo" fitHeight="115.0" fitWidth="134.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/cuicune.png" />
          </image>
       </ImageView>
-      <TextArea fx:id="nomrecette" layoutX="227.0" layoutY="34.0" prefHeight="70.0" prefWidth="336.0" />
       <VBox fx:id="imagerecettep" layoutX="89.0" layoutY="141.0" prefHeight="205.0" prefWidth="214.0" />
       <Text layoutX="317.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrédients:" />
       <VBox fx:id="ingredients" layoutX="317.0" layoutY="171.0" prefHeight="200.0" prefWidth="432.0" />
@@ -21,5 +20,6 @@
       <VBox fx:id="preparation" layoutX="93.0" layoutY="417.0" prefHeight="295.0" prefWidth="759.0" />
       <VBox fx:id="tempspreparation" layoutX="627.0" layoutY="28.0" prefHeight="83.0" prefWidth="100.0" />
       <VBox fx:id="note" layoutX="749.0" layoutY="34.0" prefHeight="83.0" prefWidth="100.0" />
+      <Text fx:id="nomrecette1" layoutX="365.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="214.0" />
    </children>
 </AnchorPane>
